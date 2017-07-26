@@ -14,7 +14,7 @@ export default {
     browser.maximizeWindow();
   },
 
-  'Testing the Title of Different QualityWorks Pages' (browser) {
+  'Testing the Title of the "Mobile a& Web Test Automation" Page' (browser) {
 
     // Initialize the constant navbar to the page-object navbar
     const navbar = browser.page.navbar();
@@ -24,8 +24,28 @@ export default {
       .navigate()
       .clickMobileAndWebTestAutomation()
       .assert.title('QualityWorks Consulting Group | Mobile and Web Automation')
+  },
+
+  'Testing the Title of the "DevOps Consultancy" Page' (browser) {
+
+    // Initialize the constant navbar to the page-object navbar
+    const navbar = browser.page.navbar();
+
+    // See navbar.js for implementation details of clickAgileCoackingLink method
+    navbar
+      .navigate()
       .clickDevOpsConsultancyLink()
       .assert.title('QualityWorks Consulting Group | DevOps Consultancy')
+  },
+
+  'Testing the Title of the "Agile Coaching Page"' (browser) {
+
+    // Initialize the constant navbar to the page-object navbar
+    const navbar = browser.page.navbar();
+
+    // See navbar.js for implementation details of clickAgileCoackingLink method
+    navbar
+      .navigate()
       .clickAgileCoachingLink()
       //Chained Assertion
       .assert.title('QualityWorks Consulting Group | Agile Coaching and Training');
