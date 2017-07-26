@@ -1,5 +1,5 @@
-describe('Mocha using nightwatch', function () {
-    it('Verify Page Title', function(browser) {
+describe('Home Page Banner', function () {
+    it('Should have correct message', function(browser) {
         const home = browser.page.welcome();
         home
             .navigate()

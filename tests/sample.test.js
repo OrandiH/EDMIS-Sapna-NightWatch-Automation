@@ -14,7 +14,7 @@ export default {
     browser.maximizeWindow();
   },
 
-  'Testing the Title of Different Quality Works Pages': browser => {
+  'Testing the Title of Different QualityWorks Pages' (browser) {
 
     // Initialize the constant navbar to the page-object navbar
     const navbar = browser.page.navbar();
@@ -31,7 +31,7 @@ export default {
       .assert.title('QualityWorks Consulting Group | Agile Coaching and Training');
   },
 
-  'Testing the QualityWorks Blog Search Results': browser => {
+  'Testing the QualityWorks Blog Search Results' (browser) {
     const blog = browser.page.blog()
 
     const expectedBlogResult = "CASE STUDY: AUTOMATED TEST DRIVEN RELEASES"

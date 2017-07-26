@@ -11,8 +11,7 @@ const commands = {
 
     searchQualityWorksBlog() {
         return this
-        .waitForElementVisible('@searchBox', 'Searchbox is visible')
-        .setValue('@searchBox', 'auto')
+        .waitThenSetValue('@searchBox', 'auto', 'Found and populated search box')
         .submitForm('@searchBox');
     }
 }
