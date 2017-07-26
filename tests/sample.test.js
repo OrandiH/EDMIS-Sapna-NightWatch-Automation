@@ -14,7 +14,7 @@ export default {
     browser.maximizeWindow();
   },
 
-  'Testing the Title of QualityWorks Homepage': browser => {
+  'Testing the Title of Different Quality Works Pages': browser => {
 
     // Initialize the constant navbar to the page-object navbar
     const navbar = browser.page.navbar();
@@ -29,6 +29,18 @@ export default {
       .clickAgileCoachingLink()
       //Chained Assertion
       .assert.title('QualityWorks Consulting Group | Agile Coaching and Training');
+  },
+
+  'Testing the QualityWorks Blog Search Results': browser => {
+    const blog = browser.page.blog()
+
+    const expectedBlogResult = "CASE STUDY: AUTOMATED TEST DRIVEN RELEASES"
+
+    blog
+      .navigate()
+      .searchQualityWorksBlog()
+      .assert.title('You searched for auto | QualityWorks Consulting Group')
+      .assert.containsText('@firstResultFromSearch', expectedBlogResult , 'Testing if first returned result contains: ' + expectedBlogResult);
   },
 
   // Close the browser after test completion, failure or timeout
