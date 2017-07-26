@@ -22,6 +22,10 @@ export default {
     // See navbar.js for implementation details of clickAgileCoackingLink method
     navbar
       .navigate()
+      .clickMobileAndWebTestAutomation()
+      .assert.title('QualityWorks Consulting Group | Mobile and Web Automation')
+      .clickDevOpsConsultancyLink()
+      .assert.title('QualityWorks Consulting Group | DevOps Consultancy')
       .clickAgileCoachingLink()
       //Chained Assertion
       .assert.title('QualityWorks Consulting Group | Agile Coaching and Training');
