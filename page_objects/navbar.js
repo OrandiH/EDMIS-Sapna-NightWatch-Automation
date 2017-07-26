@@ -33,7 +33,7 @@ const commands = {
 
 
 /**
- * Export the elements and commands to that they are accessible to nightwatch
+ * Export the elements and commands so that they are accessible to nightwatch
  */
 export default {
   elements: elements,
