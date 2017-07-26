@@ -34,6 +34,12 @@ Running a single test file
 ```sh
 npm run spec ./tests/contestant/email.test.js
 ```
+Running mocha tests
+View our [nightwatch_datadriven](https://github.com/QualityWorksCG/nightwatch_datadriven) repo to see how to set up a nightwatch project with mocha
+```sh
+$ node_modules/.bin/nightwatch --env mocha
+```
+
 ### Git Workflow 
 
 ```
