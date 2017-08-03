@@ -34,6 +34,59 @@ Running a single test file
 ```sh
 npm run spec ./tests/contestant/email.test.js
 ```
+Running mocha tests
+```sh
+$ node_modules/.bin/nightwatch --env mocha
+```
+
+### How to Setup Nightwatch for Behavior-Driven Development
+
+Taken from [nightwatchjs.org/guide#using-mocha](http://nightwatchjs.org/guide#using-mocha)
+
+Starting with version 0.8 Nightwatch is bundled with a custom version of the popular Mocha test runner which allows running tests using Mocha, thus taking advantage of its interfaces and reporters.
+
+Usage
+
+There are two main ways in which you can use Mocha with Nightwatch.
+
+Mocha is used as an alternative test runner to the built-in one. This is done by specifying the "test_runner" option in the nightwatch.json configuration file.
+
+Custom options can also be specified for Mocha:
+
+```
+{
+  ...
+  "test_runner" : {
+    "type" : "mocha",
+    "options" : {
+      "ui" : "bdd",
+      "reporter" : "list"
+    }
+  }
+  ...
+}
+```
+---
+
+**The test_runner option can also be specified at test environment level(used in this project):**
+
+```
+{
+  "test_settings" : {
+    "mocha_tests" : {
+      "test_runner" : {
+        "type" : "mocha",
+        "options" : {
+          "ui" : "bdd",
+          "reporter" : "list"
+        }
+      }
+    }
+  }
+  ...
+}
+```
+
 ### Git Workflow 
 
 ```

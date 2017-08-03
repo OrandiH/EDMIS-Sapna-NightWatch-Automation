@@ -21,6 +21,15 @@
     }
   },
   "test_settings": {
+    "mocha": {
+      "test_runner": {
+        "type": "mocha",
+        "options": {
+          "ui": "bdd",
+          "reporter": "list"
+        }
+      }
+    },
     "default": {
       "launch_url": "http://www.qualityworkscg.com/",
       "selenium_port": 4444,
