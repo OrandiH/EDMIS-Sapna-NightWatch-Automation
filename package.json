@@ -1,24 +1,22 @@
 {
-  "name": "nightwatch_starter",
+  "name": "EDMIS_Tests",
   "version": "1.0.0",
-  "description": "Nightwatch.js ES2015 starter project.",
+  "description": "EDMIS automation project.",
   "main": "nightwatch.json",
   "scripts": {
     "test": "nightwatch -e"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/qualityworksjmmb/nightwatch_starter.git"
+    "url": ""
   },
   "keywords": [
-    "QualityWorks",
     "Nightwatch.js",
     "Web",
     "Automation"
   ],
-  "author": "QualityWorks CG",
+  "author": "Orandi Harris",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/qualityworksjmmb/nightwatch_starter#readme",
   "dependencies": {
     "chromedriver": "^2.32.3",
     "mocha": "^3.4.2",
