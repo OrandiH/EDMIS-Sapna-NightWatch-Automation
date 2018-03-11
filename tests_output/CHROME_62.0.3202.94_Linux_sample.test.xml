@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="sample.test"
+    errors="0" failures="0" hostname="" id="" package="sample.test" skipped="0"
+    tests="2" time="9.459" timestamp="Sun, 11 Mar 2018 05:15:32 GMT">
+  
+    <testcase name="Testing the Title of the EDMIS main Page" classname="sample.test" time="7.516" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Testing the Title of the &quot;About&quot; section" classname="sample.test" time="1.943" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

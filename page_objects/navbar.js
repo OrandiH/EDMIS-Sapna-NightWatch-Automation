@@ -7,29 +7,20 @@ const elements = {
   mobileAndWebTestAutomation: { selector: '#menu-item-211551>a'},
   devOpsConsultancyLink: { selector: '#menu-item-211533>a'},
   // Below are xpath selectors, use css if possible
-  serviceDropdown: { selector: '//*[@id="menu-item-212179"]/a', locateStrategy: 'xpath' },
-  productsDropdown: { selector: '//*[@id="menu-item-3135"]/a', locateStrategy: 'xpath' },
-  expertiseDropdown: { selector: '//*[@id="menu-item-3136"]/a', locateStrategy: 'xpath' },
-  careersDropdown: { selector: '//*[@id="menu-item-3137"]/a', locateStrategy: 'xpath' }
+  aboutSectionLink: { selector: './/*[@id="wrapper"]/header/div/div[2]/div[2]/div/div/nav/ul/li[2]/a', locateStrategy: 'xpath' },
+  
 }
 
 //Define page object methods in the object below
 const commands = {
 
-  clickAgileCoachingLink() {
+  clickAboutSectionLink() {
 
-    // Return this from page-object methods to allow chaininf of commands
+    // Return this from page-object methods to allow chaining of commands
     return this
-      .waitForElementVisible('@serviceDropdown', 'Services Dropdown is Visible')
-
-      // Remebmber to put the '@; symbol before selectors whenever they are called by name
-
-      .moveToElement('@serviceDropdown', 10, 10, () => {
 
         //Use the custom command to wait for an element to be visible then click it 
-
-        this.waitThenClick('@agileCoachingLink', 'The Agile coaching link was clicked')
-      });
+        .waitThenClick('@aboutSectionLink', 'The About link was clicked');
   },
 
   clickDevOpsConsultancyLink() {
@@ -61,5 +52,5 @@ const commands = {
 export default {
   elements: elements,
   commands: [commands],
-  url: `http://www.qualityworkscg.com`
+  url: 'http://edmis.utechsapna.com/'
 }

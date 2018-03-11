@@ -1,4 +1,4 @@
-# Nightwatch Starter
+  # EDMIS automation project using NightWatch
 
 ***
 
@@ -217,14 +217,6 @@ module.exports = {
   }
 };
 ```
-
-#### Recording qualitywatcher results
-
-[QualityWatcher](http://qualitywatcher.io/) is an executive level dashboard for monitoring overall test status and progress.  
-An example of a qualitywatcher report is shown below:
-
-![qualitywatcher Report](https://res.cloudinary.com/dvvgdt5sz/image/upload/v1461433138/Screen_Shot_2016-04-23_at_12.37.53_PM_ojptyq.png)
-
 ____
 
 #### Node dependencies

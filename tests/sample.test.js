@@ -3,7 +3,6 @@
  * 
  */
 
-
 //Export the entire file to ensure it is found my nightwatch
 export default {
 
@@ -14,7 +13,7 @@ export default {
     browser.maximizeWindow();
   },
 
-  'Testing the Title of the "Mobile a& Web Test Automation" Page' (browser) {
+  'Testing the Title of the EDMIS main Page' (browser) {
 
     // Initialize the constant navbar to the page-object navbar
     const navbar = browser.page.navbar();
@@ -22,23 +21,10 @@ export default {
     // See navbar.js for implementation details of clickAgileCoackingLink method
     navbar
       .navigate()
-      .clickMobileAndWebTestAutomation()
-      .assert.title('QualityWorks Consulting Group | Mobile and Web Automation')
-  },
+      .assert.title('EDMIS - Energy Database Management and Information System | Caribbean Energy Management');
+    },
 
-  'Testing the Title of the "DevOps Consultancy" Page' (browser) {
-
-    // Initialize the constant navbar to the page-object navbar
-    const navbar = browser.page.navbar();
-
-    // See navbar.js for implementation details of clickAgileCoackingLink method
-    navbar
-      .navigate()
-      .clickDevOpsConsultancyLink()
-      .assert.title('QualityWorks Consulting Group | DevOps Consultancy')
-  },
-
-  'Testing the Title of the "Agile Coaching Page"' (browser) {
+  'Testing the Title of the "About" section' (browser) {
 
     // Initialize the constant navbar to the page-object navbar
     const navbar = browser.page.navbar();
@@ -46,22 +32,10 @@ export default {
     // See navbar.js for implementation details of clickAgileCoackingLink method
     navbar
       .navigate()
-      .clickAgileCoachingLink()
-      //Chained Assertion
-      .assert.title('QualityWorks Consulting Group | Agile Coaching and Training');
+      .clickAboutSectionLink()
+      .assert.urlEquals('http://edmis.utechsapna.com/#section2')
   },
 
-  'Testing the QualityWorks Blog Search Results' (browser) {
-    const blog = browser.page.blog()
-
-    const expectedBlogResult = "CASE STUDY: AUTOMATED TEST DRIVEN RELEASES"
-
-    blog
-      .navigate()
-      .searchQualityWorksBlog()
-      .assert.title('You searched for auto | QualityWorks Consulting Group')
-      .assert.containsText('@firstResultFromSearch', expectedBlogResult , 'Testing if first returned result contains: ' + expectedBlogResult);
-  },
 
   // Close the browser after test completion, failure or timeout
   after(browser) {
