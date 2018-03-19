@@ -1,4 +1,4 @@
-  # EDMIS automation project using NightWatch
+  # SAPNA MLG automation project using NightWatch
 
 ***
 

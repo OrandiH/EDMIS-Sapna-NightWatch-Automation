@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="loginTest"
+    errors="0" failures="0" hostname="" id="" package="loginTest" skipped="0"
+    tests="3" time="24.95" timestamp="Mon, 19 Mar 2018 01:32:42 GMT">
+  
+    <testcase name="Verify that a user cannot login with no input" classname="loginTest" time="12.20" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Verify that a user cannot login with invalid input" classname="loginTest" time="6.145" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Verify that a user can login with valid input" classname="loginTest" time="6.611" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

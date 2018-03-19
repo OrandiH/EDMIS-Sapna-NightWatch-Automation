@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="registerTest"
+    errors="0" failures="0" hostname="" id="" package="registerTest" skipped="0"
+    tests="2" time="23.61" timestamp="Mon, 19 Mar 2018 02:14:52 GMT">
+  
+    <testcase name="Verify that a user cannot register without entering any input" classname="registerTest" time="16.66" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Verify that a user can register with valid input" classname="registerTest" time="6.945" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

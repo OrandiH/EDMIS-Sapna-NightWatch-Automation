@@ -1,7 +1,7 @@
 {
-  "name": "EDMIS_Tests",
+  "name": "Sapna_Tests",
   "version": "1.0.0",
-  "description": "EDMIS automation project.",
+  "description": "Sapna automation project.",
   "main": "nightwatch.json",
   "scripts": {
     "test": "nightwatch -e"

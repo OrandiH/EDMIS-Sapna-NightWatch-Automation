@@ -25,7 +25,7 @@ var CHROME_CONFIGURATION = {
 };
 
 var DEFAULT = {
-    launch_url: "http://edmis.utechsapna.com/",
+    launch_url: "https://mlgcd.utechsapna.com/",
     selenium_port: 4444,
     selenium_host: "localhost",
     silent: true,
